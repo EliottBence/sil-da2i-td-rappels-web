@@ -1,6 +1,5 @@
 <?php
 require('connect.php');
-
 			$query = $bdd->prepare("SELECT idPicture FROM personHasPicture WHERE idPerson=".$data['id']);
 			$query->execute();
 			$idPicture = $query->fetch();

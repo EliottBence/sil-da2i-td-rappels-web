@@ -1,21 +1,10 @@
 <?php
-require('connect.php');
-require('getblock.php');
+    class Movie{
+      function getAllMovies(){
+        $stmt = $bdd->prepare("SELECT * FROM movie ORDER BY title ASC");
+        $stmt->execute();
+        $movies = $stmt->fetchAll();
+        return $movies;
+      }
 
-$id = $_GET['film'];
-$stmt = $bdd->prepare("SELECT * FROM movie WHERE id=".$id);
-$stmt->execute();
-$res = $stmt->fetch();
-
-
- 	   getblock('head.php', $res) ?>
-<body>
-
-	<?php
-   getblock("header.php") ?>
-	<main>
-		<?php getblock('infosfilm.php', $res);?>
-	</main>
-	<?php getblock("footer.php") ?>
-</body>
-</html>
+    }
