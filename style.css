@@ -1,0 +1,133 @@
+/*---------------------General------------*/
+body{
+	padding-right: 10px;
+	padding-left: 10px;
+
+}
+p, a, h1,h2,h3,h4,h5,h6,li, figcaption, tr{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, p, tr{
+	color:#545b70;
+}
+h1{
+	text-align:center;
+	text-transform: uppercase;
+
+}
+
+/*-------------Frames -------------*/
+.img-frame{
+	width: 20vh;
+}
+.frame {
+	display: inline-block;
+}
+
+/* --------Nav----------*/
+
+header nav ul a li {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: bold;
+		padding: 5px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	margin-top: 3px;
+	margin-bottom:3px;
+}
+
+ul li {
+    background-color: #778099;
+    margin: 0;
+}
+
+li{
+	display:inline-block;
+	width: 30%;
+	padding: 3px;
+	color: #E0D6D8;
+	transition-duration: 500ms;
+}
+li:hover{
+	background-color: #E0D6D8	;
+	color: #778099;
+}
+
+
+main{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+aside{
+	float:left;
+	width: 33%;
+	height:53vh;
+	margin-bottom: 10vh;
+}
+
+footer {
+    clear: both;
+    position: relative;
+		text-align: center;
+		padding: 1em;
+}
+section {
+    float: right;
+    width: 50%;
+}
+section.full-width {
+    width: 100%;
+}
+img{
+	width: 90%;
+}
+
+
+/* -----------Director.html--------------*/
+
+table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+
+}
+td:hover{
+	    background-color: #a3a9ba;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+@media only screen and (max-width:1000px) {
+	html, body {
+		padding: 0;
+	}
+	img {
+	    width: 25vh;
+	}
+	figure.frame.left, figure.frame.right {
+	    float: none;
+	}
+ aside {
+    width: 33%;
+		float: none;
+    margin: auto;
+}
+	ul li{
+		display: block;
+		width: 100%;
+	}
+section{
+	width:auto;
+}
+}
