@@ -1,11 +1,13 @@
 <?php
 require('connect.php');
 require('getblock.php');
-
+require_once('movieModel.php');
 $id = $_GET['film'];
-$stmt = $bdd->prepare("SELECT * FROM movie WHERE id=".$id);
-$stmt->execute();
-$res = $stmt->fetch();
+$movie = new Movie();
+$res = $movie->getBaseInfos($id);
+//$stmt = $bdd->prepare("SELECT * FROM movie WHERE id=".$id);
+//$stmt->execute();
+//$res = $stmt->fetch();
 
 
  	   getblock('head.php', $res) ?>

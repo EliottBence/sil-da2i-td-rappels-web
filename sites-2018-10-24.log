@@ -1,0 +1,4 @@
+[24/Oct/2018:13:05:00 +0200] [upstream] Upstream starting: /usr/alwaysdata/apache/2.2.32/bin/apache -f /home/eliottbence/admin/config/apache/apache.conf -D FOREGROUND (env: {'LANG': 'en_US.UTF-8', 'HOME': '/home/eliottbence', 'LC_ALL': 'en_US.UTF-8'}, cwd: /home/eliottbence/)
+[24/Oct/2018:13:05:00 +0200] [upstream] Upstream started PID: 2158615
+[24/Oct/2018:13:58:24 +0200] [upstream] [2158615] SIGTERM sent to upstream
+[24/Oct/2018:13:58:24 +0200] [upstream] [2158615] Upstream stopped (reason: idle)

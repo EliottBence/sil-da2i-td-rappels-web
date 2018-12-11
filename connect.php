@@ -6,13 +6,10 @@ $password = "eliottbence";
 
 try
 {
+    global $bdd;
     $bdd = new PDO($servername, $username, $password);
 }
 catch (Exception $e)
 {
         die('Erreur : ' . $e->getMessage());
 }
-
-
-
-

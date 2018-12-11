@@ -1,11 +1,11 @@
 <?php
 require('connect.php');
 require('getblock.php');
+require('personModel.php');
 
 $id = $_GET['id'];
-$stmt = $bdd->prepare("SELECT * FROM person WHERE id=".$id);
-$stmt->execute();
-$res = $stmt->fetch();
+$person = new Person();
+$res = $person->getBaseInfos($id);
 
 getblock('head.php') ?>
 <body>
