@@ -2,6 +2,7 @@
 require_once('connect.php');
 require_once('personModel.php');
 
+
       class Actor extends Person{
         function getAllActors(){
           global $bdd;
