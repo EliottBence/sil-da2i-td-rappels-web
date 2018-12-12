@@ -9,6 +9,11 @@ $(document).ready(function() {
     $('ul .'+ $(this).attr('class')).slideToggle('slow');
   });
 
+$("dt").on('mouseenter',function(event){
+      console.log('ttrdtrdtrd');
+      $(this).next("dd").toggle();
+      event.stopPropagation();
+    });
 
 /*
   $('#load').on('click', function(){
