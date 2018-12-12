@@ -2,6 +2,13 @@
   <p>Site développé par Eliott BENCE dans le cadre d'un projet de Licence Professionnelle</p>
 </footer>
 <script>
+$( document ).ajaxStart(function() {
+  $('.loader').fadeIn();
+});
+$( document ).ajaxStop(function() {
+  $('.loader').fadeOut();
+});
+
 $(document).ready(function() {
   //$( "aside" ).hide(2000);
 
@@ -9,11 +16,6 @@ $(document).ready(function() {
     $('ul .'+ $(this).attr('class')).slideToggle('slow');
   });
 
-$("dt").on('mouseenter',function(event){
-      console.log('ttrdtrdtrd');
-      $(this).next("dd").toggle();
-      event.stopPropagation();
-    });
 
 /*
   $('#load').on('click', function(){
@@ -24,11 +26,31 @@ $('#load').on('click', function(){
   $.ajax({
     method: "GET",
     url: "faq.php",
-     dataType : 'html'
+    dataType : 'html'
   }).done(function(faq){
-      $("#load").append(faq);
+      $("#load").parent().append(faq);
   });
 })
+
+
+
+$("dt").on('mouseenter',function(event){
+			$('dd').each(function(){
+				$(this).hide();
+			});
+      $(this).next("dd").toggle();
+      event.stopPropagation();
+    });
+});
+$("dt").on('click', function(){
+
+	console.log($(this).hasClass('persistent'));
+	if($(this).next("dd").hasClass('persistent')){
+		$(this).next("dd").removeClass("persistent");
+	} else {
+		$(this).next("dd").addClass("persistent");
+	}
+
 
 });
 

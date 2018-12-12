@@ -1,11 +1,5 @@
 <?php
-require('connect.php');
-require('getblock.php');
-require('personModel.php');
-
-$id = $_GET['id'];
-$person = new Person();
-$res = $person->getBaseInfos($id);
+	sleep(1);
 ?>
 	<h1> FAQ : </h1>
 	<dl id="faq">
@@ -54,6 +48,7 @@ $("dt").on('mouseenter',function(event){
     });
 });
 $("dt").on('click', function(){
+
 	console.log($(this).hasClass('persistent'));
 	if($(this).next("dd").hasClass('persistent')){
 		$(this).next("dd").removeClass("persistent");

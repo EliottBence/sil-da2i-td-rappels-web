@@ -26,7 +26,8 @@
 			  <img src="silentHill.jpg" alt="image d'affiche du film Silent Hill"></img>
 			  <figcaption>image d'affiche du film Silent Hill</figcaption>
 			</figure>
-			<a style="color:black" id="load" href="#"> Charger</a>
+			<a style="color:black" id="load" href="#"> Charger la FAQ</a>
+			<div class="loader" style="display:none"></div>
 
 		</aside>
 			<section>
