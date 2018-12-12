@@ -17,6 +17,10 @@ h1{
 
 }
 
+h2.actors:hover, h2.real:hover, h2.movie:hover{
+	cursor: pointer;
+}
+
 /*-------------Frames -------------*/
 .img-frame{
 	width: 20vh;
@@ -89,7 +93,7 @@ img{
 }
 
 
-/* -----------Director.html--------------*/
+/* -----------Director--------------*/
 
 table, td, th {
     border: 1px solid #ddd;

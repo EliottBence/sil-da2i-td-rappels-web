@@ -26,6 +26,8 @@
 			  <img src="silentHill.jpg" alt="image d'affiche du film Silent Hill"></img>
 			  <figcaption>image d'affiche du film Silent Hill</figcaption>
 			</figure>
+			<a style="color:black" id="load" href="#"> Charger</a>
+
 		</aside>
 			<section>
 				<p><?php echo $data['title'] ?> was revealed on <time datetime="<?php echo $data['releaseDate'] ?>"><?php echo $data['releaseDate'] ?></time>.</p>
