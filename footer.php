@@ -11,7 +11,6 @@ $( document ).ajaxStop(function() {
 
 $(document).ready(function() {
   //$( "aside" ).hide(2000);
-
   $('h2').on('click', function(){
     $('ul .'+ $(this).attr('class')).slideToggle('slow');
   });

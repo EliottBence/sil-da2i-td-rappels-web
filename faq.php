@@ -1,5 +1,5 @@
 <?php
-	sleep(1);
+	sleep(2);
 ?>
 	<h1> FAQ : </h1>
 	<dl id="faq">
@@ -10,7 +10,7 @@
 	      </dl>
 	    </dd>
 
-	    <dt>Est-ce qu'il y a des meufs bonnes dans ce film ?</dt>
+	    <dt>Est-ce qu'il y a des jolies filles dans ce film ?</dt>
 	    <dd>Ouaip</dd>
 
 	    <dt> Je suis une question</dt>

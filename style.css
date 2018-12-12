@@ -118,9 +118,9 @@ th, td {
 /*************************	LOADER	************************/
 
 .loader {
-  border: 9px solid #f3f3f3;
+  border: 9px solid pink;
   border-radius: 40%;
-  border-top: 20px dotted #3498db;
+  border-top: 20px dotted green;
   width: 80px;
   height: 50px;
   -webkit-animation: spin 2s linear infinite; /* Safari */
